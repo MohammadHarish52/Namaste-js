@@ -13,7 +13,7 @@
 // 4. We cannot redeclare the same variable with
 // let/const(even with using var the second time).
 
-// 5. const variable declaration and initialisation
+// 5. const variable declaration and initialization
 // must be done on the same line.
 
 // 6. There are three types of error:

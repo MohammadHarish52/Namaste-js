@@ -29,3 +29,9 @@ var doSomething = function (a, b) {
   return a + b;
 };
 doSomething(10, 20);
+
+//What are higher order functions?
+/*A higher-order function is a function that
+takes in other functions as its argument or returns a function as the result*/
+
+//example of higher order function

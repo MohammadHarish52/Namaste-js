@@ -10,3 +10,13 @@ setTimeout(() => {
 }, 3000);
 
 console.log("end");
+
+// blocking the main thread
+// hence never block the main thread and hence we use asynchronous js
+
+let start = new Date().getTime();
+let end = new Date().getTime();
+while (end < start + 10000) {
+  end = new Date().getTime();
+}
+console.log("Ruk 10 second");

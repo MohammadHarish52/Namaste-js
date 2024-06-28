@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "at-rule-no-unknown": null
+  },
+
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.mjs"]
+}

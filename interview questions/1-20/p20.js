@@ -6,4 +6,4 @@ console.log(obj.hasOwnProperty(1)); // false
 
 console.log(set.has(1)); // true
 
-console.log(set.has("1")); // false because keys are unique and stored as numbers
+console.log(set.has("1")); // false because directly accessing the values

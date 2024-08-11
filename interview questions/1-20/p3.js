@@ -10,4 +10,4 @@ console.log("Monthly" + income.monthly());
 // in normal function this refers to the current object
 
 console.log("Yearly" + income.yearly());
-// in arrow function this refers to the global object in the parent scope
+// in arrow function this refers to the  the parent scope

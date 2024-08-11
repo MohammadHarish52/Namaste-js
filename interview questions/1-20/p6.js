@@ -10,3 +10,5 @@ console.log(a == b); // true
 console.log(a === b); // false
 
 console.log(b === c); // false
+
+console.log(typeof Number);

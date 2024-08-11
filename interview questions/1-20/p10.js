@@ -11,6 +11,6 @@ const member = new Human("Mohammad", "Harish");
 // };
 // console.log(member.getFullName());
 Human.prototype.getFullName = function () {
-  return this.firstName + " " + this.lastName;
+  return this.firstName + " " + this.LastName;
 };
 console.log(member.getFullName());

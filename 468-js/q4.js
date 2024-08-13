@@ -1,4 +1,5 @@
-// first class function , function that take other fucntion as arguments
+// first class function , function that take other fucntion as arguments ,
+// can be treated as normal variable
 function sum(cb, x, y) {
   return cb(x, y);
 }
@@ -36,7 +37,7 @@ const multiarg = (a, b, c) => a + b + c;
 console.log(multiarg(3, 4, 5));
 
 const fnCurry = (a) => (b) => (c) => a + b + c;
-console.log(fnCurry(1));
+console.log(fnCurry(1)); // function: b => 1 + b + c
 console.log(fnCurry(1)(2)); // function: c => 3 + c
 console.log(fnCurry(1)(2)(3));
 

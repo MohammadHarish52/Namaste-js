@@ -10,11 +10,16 @@ console.log(user);
 
 // 2 . constructor function
 let user2 = new Object();
+user2.age = "24";
+user2.occupation = "Business";
 console.log(user2);
 
 // 3 . create method
 
-let user3 = Object.create(null);
+let user3 = Object.create(user);
+console.log(user3);
+user3.name = "Lavda";
+console.log(user3.age);
 
 console.log(user3);
 

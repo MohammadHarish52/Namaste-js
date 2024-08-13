@@ -7,6 +7,7 @@ let a = 10;
 }
 console.log(a); // 10
 
+// var is function scoped
 var b = 10;
 
 {
@@ -18,7 +19,7 @@ console.log(b); // 89 because fn scoped
 function userDetails(username) {
   if (username) {
     console.log(salary); // undefined due to hoisting
-    console.log(age); // ReferenceError: Cannot access 'age' before initialization
+    console.log(age); // ReferenceError: Cannot access 'age' before initialization in TDZ
     let age = 30;
     var salary = 10000;
   }
@@ -26,3 +27,15 @@ function userDetails(username) {
   console.log(age); //error: age is not defined(due to block scope)
 }
 userDetails("John");
+/*
+ The Temporal Dead Zone(TDZ) is a specific period or area of a block where
+ a variable is inaccessible until it has been intialized with a value.
+ let and const keywords, but not with var. In ECMAScript 6, let and const
+ causes a ReferenceError.
+*/
+function somemethod() {
+  console.log(counter1); // undefined
+  console.log(counter2); // ReferenceError
+  var counter1 = 1;
+  let counter2 = 2;
+}

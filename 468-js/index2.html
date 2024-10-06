@@ -1,0 +1,22 @@
+<!-- event capturing passing true as the argument -->
+<div>
+  <button class="child">Hello</button>
+</div>
+
+<script>
+  const parent = document.querySelector("div");
+  const child = document.querySelector(".child");
+
+  parent.addEventListener(
+    "click",
+    function () {
+      alert("Parent");
+    },
+    true
+  );
+
+  child.addEventListener("click", function () {
+    alert("Child");
+  });
+</script>
+// Parent // Child

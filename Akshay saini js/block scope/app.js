@@ -11,8 +11,8 @@
 }
 console.log(a);
 //block scope is no longer accessible and hence the reference error persists
-// console.log(b);
-// console.log(c);
+console.log(b);
+console.log(c);
 
 //shadowing
 var x = "global";
